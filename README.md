@@ -19,7 +19,7 @@ Lulusan S1 Informatika dari Universitas Mulawarman (2024). Memiliki ketertarikan
 
 ## 🏆 Pencapaian
 * **Juara 3** Sayembara Desain Logo Universitas Mulawarman (2024).
-* **Mantan Fasilitator** Google Cloud Arcade (Juli – September 2025).
+* **Ex Fasilitator** Google Cloud Arcade (Juli – September 2025).
 
 ## 🔗 Hubungi Saya
 * **Website:** [Klik di sini untuk melihat portfolio live](https://mahmuda-portofolio-q2c13y763-mahmuda1004-1917s-projects.vercel.app/)
