@@ -1,20 +1,29 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Mahmuda - Minimalist Portfolio
+## 📸 Tampilan Website
+![Portfolio Preview](portofolio.png)
+Selamat datang di repository portofolio pribadi saya! Website ini merupakan ruang digital untuk menampilkan perjalanan karier, proyek teknis, dan keahlian saya sebagai lulusan S1 Informatika.
 
-# Run and deploy your AI Studio app
+## 🌟 Tentang Saya
+Lulusan S1 Informatika dari Universitas Mulawarman (2024). Memiliki ketertarikan besar pada pengembangan aplikasi web, integrasi data (ETL Pipeline), dan teknologi cloud. Saya berdomisili di Penajam Paser Utara, Kalimantan Timur dan sangat antusias untuk berkontribusi dalam solusi teknologi yang inovatif.
 
-This contains everything you need to run your app locally.
+## 🛠 Tech Stack
+* **Languages:** TypeScript, JavaScript, SQL
+* **Frameworks/Libraries:** React, Express.js, Tailwind CSS
+* **Tools:** Git, Vite, Node.js
+* **Cloud & AI:** Google Cloud, Azure AI
 
-View your app in AI Studio: https://ai.studio/apps/6f6ab1b8-2588-4ee0-9e3e-8fff58bbc10f
+## 🚀 Proyek Unggulan
+* **Personal Portfolio Website:** Website yang Anda kunjungi ini, dibangun menggunakan React, Vite, dan Tailwind CSS.
+* **ETL Pipeline Project:** Implementasi alur kerja data dari ekstraksi hingga loading untuk keperluan analitik.
+* **Bookshelf App:** Aplikasi untuk mengelola koleksi buku dengan fitur CRUD dasar.
 
-## Run Locally
+## 🏆 Pencapaian
+* **Juara 3** Sayembara Desain Logo Universitas Mulawarman (2024).
+* **Mantan Fasilitator** Google Cloud Arcade (Juli – September 2025).
 
-**Prerequisites:**  Node.js
+## 🔗 Hubungi Saya
+* **Website:** [Klik di sini untuk melihat portfolio live](https://mahmuda-portofolio-q2c13y763-mahmuda1004-1917s-projects.vercel.app/)
+* **GitHub:** [github.com/mahmuda1004](https://github.com/mahmuda1004)
 
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+---
+*Dibuat oleh Mahmuda | Lulusan S1 Informatika, Universitas Mulawarman.*
