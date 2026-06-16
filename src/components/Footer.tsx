@@ -24,13 +24,13 @@ export default function Footer() {
         </div>
 
         {/* Center built statement */}
-        <div className="flex items-center gap-1.5 text-xs text-neutral-400 font-medium">
+        {/* <div className="flex items-center gap-1.5 text-xs text-neutral-400 font-medium">
           <span>Didesain dengan</span>
           <Heart size={11} className="text-indigo-400 fill-indigo-400/20" />
           <span>&</span>
           <Sparkles size={11} className="text-teal-400 fill-teal-400/10" />
           <span>estetika minimalis modern</span>
-        </div>
+        </div> */}
 
         {/* Right scroll to top button */}
         <button
