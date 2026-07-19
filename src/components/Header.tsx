@@ -72,7 +72,7 @@ export default function Header({ githubUrl }: HeaderProps) {
             <Code size={16} />
           </div>
           <span className="bg-gradient-to-r from-neutral-100 via-neutral-200 to-neutral-400 bg-clip-text text-transparent">
-            mahmuda<span className="text-indigo-400 font-mono text-base">.dev</span>
+            mahmuda<span className="text-indigo-400 font-mono text-base"></span>
           </span>
         </button>
 
