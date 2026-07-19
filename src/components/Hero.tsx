@@ -97,16 +97,14 @@ export default function Hero({ profile, scrollToSection }: HeroProps) {
 
           {/* Heading */}
           <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight leading-[1.08]">
-            Designing the Future <br />
-            Represented in{' '}
+            Software <br />
             <span className="bg-gradient-to-r from-indigo-400 via-teal-300 to-indigo-500 bg-clip-text text-transparent">
-              Clean Architectures
+              Developer
             </span>
           </h1>
-
           {/* Bio Description */}
           <p className="text-neutral-400 text-base sm:text-lg leading-relaxed max-w-xl">
-            Halo, saya <strong className="text-white font-semibold">Mahmuda</strong>. Seorang software engineer dan pembuat antarmuka kreatif dengan komitmen penuh pada estetika minimalis modern, interaksi yang responsif, dan kode yang tangguh.
+            Halo, saya <strong className="text-white font-semibold">Mahmuda</strong>. Halo, saya Mahmuda, lulusan S1 Informatika Universitas Mulawarman yang berfokus pada pengembangan aplikasi web, pengolahan data, dan solusi berbasis AI. Saya senang membangun aplikasi yang modern, efisien, dan mudah digunakan.
           </p>
 
           {/* Call to Actions */}
