@@ -5,12 +5,10 @@ import { motion, AnimatePresence } from 'motion/react';
 interface ContactProps {
   githubUrl: string;
   linkedinUrl: string;
-  cvUrl: string;
   email: string;
 }
 
-export default function Contact({ githubUrl, linkedinUrl,cvUrl,
-  email, }: ContactProps) {
+export default function Contact({ githubUrl, linkedinUrl, email, }: ContactProps) {
   const [copied, setCopied] = useState(false);
   const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -101,8 +99,17 @@ export default function Contact({ githubUrl, linkedinUrl,cvUrl,
                     <MapPin size={16} />
                   </div>
                   <div>
-                    <h4 className="text-xs font-mono font-bold text-neutral-500 uppercase">Lokasi Saat Ini</h4>
-                    <p className="text-xs sm:text-sm text-white font-semibold mt-1">Indonesian Timezone (GMT+8)</p>
+                    <h4 className="text-xs font-mono font-bold text-neutral-500 uppercase">
+                      Lokasi Saat Ini
+                    </h4>
+                    
+                    <p className="text-sm text-white font-semibold mt-1">
+                      Penajam Paser Utara
+                    </p>
+                    
+                    <p className="text-xs text-neutral-500">
+                      East Kalimantan, Indonesia
+                    </p>
                   </div>
                 </div>
 
@@ -112,7 +119,7 @@ export default function Contact({ githubUrl, linkedinUrl,cvUrl,
                   </div>
                   <div>
                     <h4 className="text-xs font-mono font-bold text-neutral-500 uppercase">Waktu Respons Rata-rata</h4>
-                    <p className="text-xs sm:text-sm text-white font-semibold mt-1">Kurang dari 24 jam kerja</p>
+                    <p className="text-xs sm:text-sm text-white font-semibold mt-1"> 1 - 2 Hari Kerja</p>
                   </div>
                 </div>
               </div>
@@ -154,7 +161,7 @@ export default function Contact({ githubUrl, linkedinUrl,cvUrl,
                     LinkedIn
                   </h4>
                   <p className="text-[11px] text-neutral-500 mt-0.5">
-                    @mahmuda
+                    @mahmuda1004
                   </p>
                 </div>
               </div>
@@ -175,7 +182,7 @@ export default function Contact({ githubUrl, linkedinUrl,cvUrl,
 
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div className="space-y-1.5ClassName">
+                <div className="space-y-1.5">
                   <label className="text-[10px] font-mono text-neutral-500 uppercase" htmlFor="name">Nama Lengkap</label>
                   <input
                     type="text"
@@ -188,7 +195,7 @@ export default function Contact({ githubUrl, linkedinUrl,cvUrl,
                     className="w-full bg-neutral-950 border border-neutral-800 focus:border-neutral-700 rounded-lg py-2.5 px-3.5 text-xs text-neutral-300 placeholder-neutral-600 focus:outline-none transition-all"
                   />
                 </div>
-                <div className="space-y-1.5ClassName">
+                <div className="space-y-1.5">
                   <label className="text-[10px] font-mono text-neutral-500 uppercase" htmlFor="email">Alamat Email</label>
                   <input
                     type="email"
@@ -203,7 +210,7 @@ export default function Contact({ githubUrl, linkedinUrl,cvUrl,
                 </div>
               </div>
 
-              <div className="space-y-1.5ClassName">
+              <div className="space-y-1.5">
                 <label className="text-[10px] font-mono text-neutral-500 uppercase" htmlFor="subject">Subjek Projek</label>
                 <input
                   type="text"
