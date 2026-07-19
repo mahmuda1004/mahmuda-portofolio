@@ -16,7 +16,7 @@ export default function Footer() {
         <div className="flex flex-col sm:items-start text-center sm:text-left gap-1.5">
           <div className="flex items-center justify-center sm:justify-start gap-2 font-display text-sm font-bold text-white">
             <Code size={14} className="text-indigo-400" />
-            <span>mahmuda<span className="text-indigo-400 font-mono font-medium">.dev</span></span>
+            <span>mahmuda<span className="text-indigo-400 font-mono font-medium">1004</span></span>
           </div>
           <p className="text-[11px] text-neutral-500 font-mono uppercase tracking-wider">
             © {new Date().getFullYear()} Mahmuda. Seluruh hak cipta dilindungi.
