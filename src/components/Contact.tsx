@@ -268,7 +268,7 @@ export default function Contact({ githubUrl, linkedinUrl,cvUrl,
                   exit={{ opacity: 0 }}
                   className="mt-4 p-3 bg-emerald-950/20 border border-emerald-800/40 text-emerald-400 text-[11px] font-medium rounded-lg text-center"
                 >
-                  Terima kasih! Pesan Anda telah disimulasikan dan diterima. Saya akan segera menghubungi Anda kembali.
+                  Terima kasih! Pesan Anda telah diterima. Saya akan segera menghubungi Anda kembali.
                 </motion.div>
               )}
             </AnimatePresence>
