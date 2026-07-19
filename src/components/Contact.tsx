@@ -25,20 +25,50 @@ export default function Contact({ githubUrl, linkedinUrl, email, }: ContactProps
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!formData.name || !formData.email || !formData.message) return;
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
 
-    setIsSubmitting(true);
-    
-    // Simulate API delivery
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitStatus('success');
-      setFormData({ name: '', email: '', subject: '', message: '' });
-      setTimeout(() => setSubmitStatus('idle'), 5000);
-    }, 1500);
-  };
+  if (!formData.name || !formData.email || !formData.message) return;
+
+  setIsSubmitting(true);
+  setSubmitStatus("idle");
+
+  const form = new FormData();
+
+  form.append("access_key", "dd5d6da9-8516-4da7-8a53-3fba3f3371a9");
+  form.append("name", formData.name);
+  form.append("email", formData.email);
+  form.append("subject", formData.subject || "Pesan dari Portfolio");
+  form.append("message", formData.message);
+
+  try {
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: form,
+    });
+
+    const result = await response.json();
+
+    if (result.success) {
+      setSubmitStatus("success");
+
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+
+      setTimeout(() => setSubmitStatus("idle"), 5000);
+    } else {
+      setSubmitStatus("error");
+    }
+  } catch (error) {
+    setSubmitStatus("error");
+  } finally {
+    setIsSubmitting(false);
+  }
+};
 
   return (
     <section id="contact" className="py-24 border-t border-neutral-900 bg-neutral-950/40 relative">
