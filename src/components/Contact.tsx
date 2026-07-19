@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
-import { Mail, Github, MapPin, Copy, Check, Send, MessageSquare, CircleDot, ArrowUpRight } from 'lucide-react';
+import { Mail, Github, Linkedin, Download, MapPin, Copy, Check, Send, MessageSquare, CircleDot, ArrowUpRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
 interface ContactProps {
   githubUrl: string;
+  linkedinUrl: string;
+  cvUrl: string;
   email: string;
 }
 
-export default function Contact({ githubUrl, email }: ContactProps) {
+export default function Contact({ githubUrl, linkedinUrl,cvUrl,
+  email, }: ContactProps) {
   const [copied, setCopied] = useState(false);
   const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -99,7 +102,7 @@ export default function Contact({ githubUrl, email }: ContactProps) {
                   </div>
                   <div>
                     <h4 className="text-xs font-mono font-bold text-neutral-500 uppercase">Lokasi Saat Ini</h4>
-                    <p className="text-xs sm:text-sm text-white font-semibold mt-1">Indonesian Timezone (GMT+7)</p>
+                    <p className="text-xs sm:text-sm text-white font-semibold mt-1">Indonesian Timezone (GMT+8)</p>
                   </div>
                 </div>
 
@@ -133,6 +136,33 @@ export default function Contact({ githubUrl, email }: ContactProps) {
                 </div>
               </div>
               <ArrowUpRight size={18} className="text-neutral-500 group-hover:text-white group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
+            </a>
+            {/* LinkedIn */}
+            <a
+              href={linkedinUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-neutral-900/35 hover:bg-neutral-900/65 border border-neutral-800/55 hover:border-neutral-700 p-6 rounded-xl flex items-center justify-between gap-4 group transition-all duration-200 cursor-pointer"
+            >
+              <div className="flex items-center gap-4">
+                <div className="w-10 h-10 rounded-lg bg-neutral-950 border border-neutral-800 flex items-center justify-center text-sky-400">
+                  <Linkedin size={18} />
+                </div>
+            
+                <div>
+                  <h4 className="text-xs font-mono font-bold text-neutral-400">
+                    LinkedIn
+                  </h4>
+                  <p className="text-[11px] text-neutral-500 mt-0.5">
+                    @mahmuda
+                  </p>
+                </div>
+              </div>
+            
+              <ArrowUpRight
+                size={18}
+                className="text-neutral-500 group-hover:text-white group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all"
+              />
             </a>
           </div>
 
@@ -186,7 +216,7 @@ export default function Contact({ githubUrl, email }: ContactProps) {
                 />
               </div>
 
-              <div className="space-y-1.5ClassName">
+              <div className="space-y-1.5">
                 <label className="text-[10px] font-mono text-neutral-500 uppercase" htmlFor="message">Uraian Pesan</label>
                 <textarea
                   id="message"
