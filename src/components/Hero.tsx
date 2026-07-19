@@ -97,7 +97,7 @@ export default function Hero({ profile, scrollToSection }: HeroProps) {
 
           {/* Heading */}
           <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight leading-[1.08]">
-            Software Developer <br />
+            Software Developer, <br />
             <span className="bg-gradient-to-r from-indigo-400 via-teal-300 to-indigo-500 bg-clip-text text-transparent">
               Web Developer & Data Enthusiast
             </span>
