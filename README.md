@@ -22,7 +22,7 @@ Lulusan S1 Informatika dari Universitas Mulawarman (2024). Memiliki ketertarikan
 * **Ex Fasilitator** Google Cloud Arcade (Juli – September 2025).
 
 ## 🔗 Hubungi Saya
-* **Website:** [Klik di sini untuk melihat portfolio live](https://mahmuda-portofolio-q2c13y763-mahmuda1004-1917s-projects.vercel.app/)
+* **Website:** [Klik di sini untuk melihat portfolio live](https://mahmuda-portofolio-rosy.vercel.app/)
 * **GitHub:** [github.com/mahmuda1004](https://github.com/mahmuda1004)
 
 ---
