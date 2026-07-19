@@ -84,7 +84,7 @@ export default function App() {
         <Pencapaian />
 
         {/* SECTION 7: CONTACT DESK & SOCIAL FEED */}
-        <Contact githubUrl={profile.html_url} email="mahmuda1004@gmail.com" />
+        <Contact githubUrl={profile.html_url} linkedinUrl="https://www.linkedin.com/in/mahmuda1004" email="mahmuda1004@gmail.com" />
 
       </main>
 
