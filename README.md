@@ -1,6 +1,6 @@
 # Mahmuda - Minimalist Portfolio
 ## 📸 Tampilan Website
-![Portfolio Preview](portofolio-mahmuda.png)
+![Portfolio Preview](portofolio_me.png)
 Selamat datang di repository portofolio pribadi saya! Website ini merupakan ruang digital untuk menampilkan perjalanan karier, proyek teknis, dan keahlian saya sebagai lulusan S1 Informatika.
 
 ## 🌟 Tentang Saya
